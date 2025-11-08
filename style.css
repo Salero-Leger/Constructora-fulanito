@@ -7,7 +7,13 @@ body{
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     }
+
+h3,p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 .logo{
     font-weight: 800;
     font-size: 24px;
@@ -107,6 +113,7 @@ body{
     max-width: 200px;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .subtext-image{
     text-align: center;
@@ -114,5 +121,70 @@ body{
     margin-block-end: 0;
     font-size: 18px;
     color: #646363;
-    
+}
+.third-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #E5E7EB;
+}
+.quote-author-block{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.author-name{
+    align-self: flex-end;
+    font-weight: 600;
+
+}
+.inspirational-quote{
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.fourth-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.callto-action{
+    display: flex;
+    color: #fff;
+    background-color: #007bff;
+    width: 70%;
+    padding: 50px 80px;
+    border-radius: 6px;
+}
+.callto-action-text{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+}
+.callto-action button{
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    align-self: center;
+    padding: 8px 32px;
+    border-style: none;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.callto-action-text p{
+    font-weight: 200;
+}
+footer{
+    color: white;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
